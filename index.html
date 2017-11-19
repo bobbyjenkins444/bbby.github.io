@@ -14,8 +14,22 @@ img{
 			Tony Budetti Club 
 		</h1>
 	</div>
-	<div style="padding:100px010px0; margin:0">s
-		<img src="tony.png" height="120%" style="max-width:100%;">
-		</img>
+	<div style="padding:100px010px0; margin:0">
+		<audio id="Mp3Me" autoplay>
+			<source src="whitewomen.ogg">
+			<source src="whitewomen.mp3">
+		</audio>
+		<script type="text/javascript">
+		function GuitarTrack(){
+		    var Mp3Me= document.getElementById('Mp3Me');
+		    Mp3Me.children[0].src = "whitewomen.ogg";
+		    Mp3Me.children[1].src = "whitewomen.mp3";
+		    Mp3Me.load();
+		}
+		</script>
+		<a href="javascript:GuitarTrack();">
+			<img src="tony.png" height="120%" style="max-width:100%;">
+			</img>
+		</a>
 	</div>
 </bod
