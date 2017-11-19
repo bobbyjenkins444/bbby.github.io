@@ -5,7 +5,6 @@
 	<style>
 
 img{
-	padding:100px010px0;
 	margin:0;
 }
 </style>
@@ -15,15 +14,15 @@ img{
 		</h1>
 	</div>
 	<div style="padding:100px010px0; margin:0">
-		<audio id="Mp3Me" autoplay>
-			<source src="whitewomen.ogg">
+		<audio id="Mp3Me" autoplay preload="auto">
 			<source src="whitewomen.mp3">
+			<source src="whitewomen.ogg">
 		</audio>
 		<script type="text/javascript">
 		function GuitarTrack(){
 		    var Mp3Me= document.getElementById('Mp3Me');
-		    Mp3Me.children[0].src = "whitewomen.ogg";
-		    Mp3Me.children[1].src = "whitewomen.mp3";
+		    Mp3Me.children[0].src = "whitewomen.mp3";
+		    Mp3Me.children[1].src = "whitewomen.ogg";
 		    Mp3Me.load();
 		}
 		</script>
