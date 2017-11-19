@@ -6,6 +6,16 @@
 		img{
 			margin:0;
 		}
+		.fade{
+		   opacity: 1;
+		   transition: opacity .25s ease-in-out;
+		   -moz-transition: opacity .25s ease-in-out;
+		   -webkit-transition: opacity .25s ease-in-out;
+		  }
+
+	   .fade:hover {
+	      	opacity: 0.75;
+	      }
 	</style>
 	<div>
 		<h1 style="color:#DDD; font-family:helvetica; text-align:center; font-size:325%; text-shadow:4px 4px 5px #0050ee;">
@@ -26,7 +36,7 @@
 		}
 		</script>
 		<a href="javascript:WhiteWomen();">
-			<img src="tony.png" height="120%" style="max-width:100%;"> </img>
+			<img class="fade" src="tony.png" height="120%" style="max-width:100%;"> </img>
 		</a>
 	</div>
 </body>
